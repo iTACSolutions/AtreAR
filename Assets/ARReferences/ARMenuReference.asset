@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
-  m_Name: ReferenceImageLibrary
+  m_Name: ARMenuReference
   m_EditorClassIdentifier: 
   m_GuidLow: 5382378637948244794
   m_GuidHigh: 15206568386111087009
@@ -23,5 +23,25 @@ MonoBehaviour:
       m_GuidHigh: 12345623967249729848
     m_Size: {x: 0.03, y: 0.024249999}
     m_SpecifySize: 1
-    m_Name: starbacks
+    m_Name: starbucks
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5750912182802316961
+      m_GuidHigh: 1025611705789086902
+    m_SerializedTextureGuid:
+      m_GuidLow: 300750784248473554
+      m_GuidHigh: 1075290734076433707
+    m_Size: {x: 0.03, y: 0.0235}
+    m_SpecifySize: 1
+    m_Name: tullys
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5724968520481012996
+      m_GuidHigh: 8123813880928638652
+    m_SerializedTextureGuid:
+      m_GuidLow: 8394351517362718700
+      m_GuidHigh: 1174795466686807448
+    m_Size: {x: 0.03, y: 0.02475}
+    m_SpecifySize: 1
+    m_Name: wired
     m_Texture: {fileID: 0}
