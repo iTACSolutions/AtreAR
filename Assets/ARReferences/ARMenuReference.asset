@@ -19,9 +19,9 @@ MonoBehaviour:
       m_GuidLow: 5161620176381172163
       m_GuidHigh: 17756942244849513917
     m_SerializedTextureGuid:
-      m_GuidLow: 15320255652101090078
-      m_GuidHigh: 12345623967249729848
-    m_Size: {x: 0.03, y: 0.024249999}
+      m_GuidLow: 14430709854854283832
+      m_GuidHigh: 6629370603012233576
+    m_Size: {x: 0.03, y: 0.024225}
     m_SpecifySize: 1
     m_Name: starbucks
     m_Texture: {fileID: 0}
@@ -29,9 +29,9 @@ MonoBehaviour:
       m_GuidLow: 5750912182802316961
       m_GuidHigh: 1025611705789086902
     m_SerializedTextureGuid:
-      m_GuidLow: 300750784248473554
-      m_GuidHigh: 1075290734076433707
-    m_Size: {x: 0.03, y: 0.0235}
+      m_GuidLow: 586814101254332509
+      m_GuidHigh: 18256801716512776024
+    m_Size: {x: 0.03, y: 0.023474999}
     m_SpecifySize: 1
     m_Name: tullys
     m_Texture: {fileID: 0}
@@ -39,8 +39,8 @@ MonoBehaviour:
       m_GuidLow: 5724968520481012996
       m_GuidHigh: 8123813880928638652
     m_SerializedTextureGuid:
-      m_GuidLow: 8394351517362718700
-      m_GuidHigh: 1174795466686807448
+      m_GuidLow: 15890004777693642703
+      m_GuidHigh: 17111006651557099690
     m_Size: {x: 0.03, y: 0.02475}
     m_SpecifySize: 1
     m_Name: wired
