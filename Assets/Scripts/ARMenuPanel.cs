@@ -3,17 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// ARで表示するメニュー
+/// </summary>
 public class ARMenuPanel : MonoBehaviour
 {
     private Camera _camera;
 
+    // 表示するメニューのプレファブ
     [SerializeField] private GameObject _starbucksMenu;
     [SerializeField] private GameObject _tullysMenu;
     [SerializeField] private GameObject _wiredMenu;
 
+    // 現在表示中のメニューオブジェクト
     private GameObject _displayingPanel;
+    // 表示中のメニューの店の種類
     private ARMenuManager.TrackingObjectType _displayingType;
 
+    // メニューの表示状態(1店舗でも表示されて入ればtrue)
     public bool IsVisible => _displayingPanel != null && _displayingPanel.activeSelf;
 
     private void Start()
@@ -31,6 +38,9 @@ public class ARMenuPanel : MonoBehaviour
         UpdateVisible();
     }
 
+    /// <summary>
+    /// トラッキング中の画像に応じて、メニューの表示を更新
+    /// </summary>
     void UpdatePanel()
     {
         if (ARMenuManager.TrackingType != _displayingType)
@@ -40,7 +50,11 @@ public class ARMenuPanel : MonoBehaviour
 
         _displayingType = ARMenuManager.TrackingType;
     }
-
+    
+    /// <summary>
+    /// メニューの種類を更新
+    /// </summary>
+    /// <param name="setType"></param>
     void ChangePanel(ARMenuManager.TrackingObjectType setType)
     {
         if (_displayingPanel != null)
@@ -65,6 +79,9 @@ public class ARMenuPanel : MonoBehaviour
             _displayingPanel.SetActive(true);
     }
 
+    /// <summary>
+    /// 表示・非表示の更新
+    /// </summary>
     void UpdateVisible()
     {
         if (_displayingPanel == null) return;

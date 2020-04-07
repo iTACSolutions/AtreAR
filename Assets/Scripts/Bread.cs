@@ -1,4 +1,7 @@
-﻿public class Bread
+﻿/// <summary>
+/// パンのAPIを利用するためのパンクラス
+/// </summary>
+public class Bread
 {
     public string Name;
     public int XMin;

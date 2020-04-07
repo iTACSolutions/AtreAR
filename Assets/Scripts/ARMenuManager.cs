@@ -6,10 +6,14 @@ using UnityEngine.XR.ARFoundation;
 
 public class ARMenuManager : MonoBehaviour
 {
+    /// <summary>
+    /// トラッキング中のARマーカーの種類
+    /// </summary>
     public enum TrackingObjectType
     {
         None, Starbucks, Tullys, Wired
     }
+    
     [SerializeField] ARTrackedImageManager _arTrackedImageManager;
     [SerializeField] private Text logText;
     
@@ -17,6 +21,7 @@ public class ARMenuManager : MonoBehaviour
 
     private void Start()
     {
+        // ARFoundationのARTrackedImageManagerの更新タイミングを購読
         _arTrackedImageManager.trackedImagesChanged += OnImageChanged;
     }
 
@@ -25,6 +30,10 @@ public class ARMenuManager : MonoBehaviour
         logText.text = TrackingType.ToString();
     }
 
+    /// <summary>
+    /// ARTrackedImageManagerで読み取った画像の種類によって、追跡中のARマーカーの更新を行う
+    /// </summary>
+    /// <param name="args"></param>
     public void OnImageChanged(ARTrackedImagesChangedEventArgs args)
     {
         Debug.Log("Image Changed!");

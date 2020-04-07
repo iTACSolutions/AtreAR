@@ -6,6 +6,10 @@ using UnityEngine.AI;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
+/// <summary>
+/// パンのAPIを利用するためのクラス
+/// パンを判別するAPIの利用を考えていたが、リアルタイム性にかけたため今回デモ版では使用していない
+/// </summary>
 public class BreadAPI : MonoBehaviour
 {
     [SerializeField] private Text _logText;
